@@ -132,7 +132,7 @@ const UploadReceipt = ({ onUploadTransaction }) => {
 
         if (transactions.length > 0) {
           // ✅ Save to backend
-          fetch('http://localhost:5000/api/transactions/bulk', {
+          fetch('https://financetracker-sand.vercel.app/api/transactions/bulk', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

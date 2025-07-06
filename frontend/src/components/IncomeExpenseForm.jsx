@@ -12,7 +12,7 @@ const IncomeExpenseForm = ({ onAdd }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const token = getToken();
-    const res = await axios.post('http://localhost:5000/api/transactions', form, {
+    const res = await axios.post('https://financetracker-sand.vercel.app/api/transactions', form, {
       headers: { Authorization: `Bearer ${token}` }
     });
     onAdd(res.data);
@@ -70,7 +70,7 @@ const IncomeExpenseForm = ({ onAdd }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const token = getToken();
-    const res = await axios.post('http://localhost:5000/api/transactions', form, {
+    const res = await axios.post('https://financetracker-sand.vercel.app/api/transactions', form, {
       headers: { Authorization: `Bearer ${token}` }
     });
     onAdd(res.data);
