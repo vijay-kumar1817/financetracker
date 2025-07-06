@@ -1,18 +1,3 @@
-/*import React from 'react';
-
-const SummaryCards = ({ income, expenses }) => {
-  const balance = income - expenses;
-  return (
-    <div className="summary-cards">
-      <div className="card">Income: ₹{income}</div>
-      <div className="card">Expenses: ₹{expenses}</div>
-      <div className="card">Balance: ₹{balance}</div>
-    </div>
-  );
-};
-
-export default SummaryCards;*/
-
 import React from 'react';
 
 const SummaryCards = ({ income, expenses }) => {

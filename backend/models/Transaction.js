@@ -1,16 +1,4 @@
 // backend/models/Transaction.js
-// import mongoose from 'mongoose';
-
-// const transactionSchema = new mongoose.Schema({
-//   user: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
-//   type: { type: String, enum: ['Income', 'Expense'], required: true },
-//   category: { type: String, required: true },
-//   amount: { type: Number, required: true },
-//   date: { type: Date, required: true },
-//   note: { type: String }
-// });
-
-// export default mongoose.model('Transaction', transactionSchema);
 
 import mongoose from 'mongoose';
 
@@ -18,7 +6,7 @@ const transactionSchema = new mongoose.Schema({
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
-    required: true, // ensure each transaction belongs to a user
+    required: true, 
   },
   type: {
     type: String,

@@ -1,15 +1,3 @@
-// import React from 'react';
-
-// const UploadPDF = () => (
-//   <div className="upload-box">
-//     <h3>Upload PDF Transaction History</h3>
-//     <p>Upload .pdf bank/statement files (tabular format)</p>
-//     <input type="file" accept=".pdf" />
-//   </div>
-// );
-
-// export default UploadPDF;
-
 import React from 'react';
 
 const UploadPDF = ({ onUpload }) => {

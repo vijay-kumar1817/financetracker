@@ -1,22 +1,3 @@
-// import React from 'react';
-
-
-
-// import React from 'react';
-
-// const ExpenseChart = ({ categoryTotals }) => (
-//   <div className="chart-box">
-//     <h3>Expense Charts</h3>
-//     <ul>
-//       {Object.entries(categoryTotals).map(([category, amount]) => (
-//         <li key={category}>{category}: ₹{amount}</li>
-//       ))}
-//     </ul>
-//   </div>
-// );
-
-// export default ExpenseChart;
-
 import React, { useState } from 'react';
 import { Bar, Pie } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, ArcElement, Tooltip, Legend, Title } from 'chart.js';

@@ -1,14 +1,3 @@
-/*import React from 'react';
-
-const Header = () => (
-  <header className="header">
-    <h1>Personal Finance Assistant</h1>
-    <p>Track, manage, and understand your financial activities effortlessly.</p>
-  </header>
-);
-
-export default Header;*/
-
 import React from 'react';
 
 const Header = () => (
