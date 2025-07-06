@@ -18,7 +18,10 @@ const app = express();
 
 
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://financetracker-p6rg.vercel.app',
+  credentials: true, // Optional: if you are using cookies or authentication
+}));
 app.use(express.json());
 
 app.use('/api/users', userRoutes);
