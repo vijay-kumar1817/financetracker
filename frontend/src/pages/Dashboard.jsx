@@ -23,7 +23,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await axios.get('http://localhost:5000/api/transactions', {
+      const res = await axios.get('https://financetracker-sand.vercel.app/api/transactions', {
         headers: { Authorization: `Bearer ${getToken()}` }
       });
       setTransactions(res.data);

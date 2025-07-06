@@ -13,7 +13,19 @@ connectDB();
 
 const app = express();
 
+<<<<<<< HEAD
 app.use(cors());
+=======
+
+
+
+
+
+app.use(cors({
+  origin: 'https://financetracker-p6rg.vercel.app'|| 'http://localhost:5173',
+  credentials: true, // Optional: if you are using cookies or authentication
+}));
+>>>>>>> c5b456abf1c986adaaea592eb12b6c64ebc2be15
 app.use(express.json());
 
 app.use('/api/users', userRoutes);

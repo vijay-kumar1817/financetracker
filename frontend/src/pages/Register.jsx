@@ -7,7 +7,7 @@ const Register = () => {
   const navigate = useNavigate();
 
   const handleRegister = async (credentials) => {
-    const res = await axios.post('http://localhost:5000/api/users/register', credentials);
+    const res = await axios.post('https://financetracker-sand.vercel.app/api/users/register', credentials);
     localStorage.setItem('token', res.data.token);
     navigate('/');
   };

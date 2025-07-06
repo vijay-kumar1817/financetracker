@@ -1,3 +1,46 @@
+<<<<<<< HEAD
+=======
+/*import React, { useState } from 'react';
+import axios from 'axios';
+import { getToken } from '../utils/api';
+
+const IncomeExpenseForm = ({ onAdd }) => {
+  const [form, setForm] = useState({
+    amount: '', type: 'Expense', category: '', date: '', note: ''
+  });
+
+  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const token = getToken();
+    const res = await axios.post('https://financetracker-sand.vercel.app/api/transactions', form, {
+      headers: { Authorization: `Bearer ${token}` }
+    });
+    onAdd(res.data);
+    setForm({ amount: '', type: 'Expense', category: '', date: '', note: '' });
+  };
+
+  return (
+    <form className="form" onSubmit={handleSubmit}>
+      <h3>Add a Transaction</h3>
+      <input name="amount" value={form.amount} onChange={handleChange} placeholder="Amount" required />
+      <select name="type" value={form.type} onChange={handleChange}>
+        <option>Income</option>
+        <option>Expense</option>
+      </select>
+      <input name="category" value={form.category} onChange={handleChange} placeholder="Category" required />
+      <input name="date" type="date" value={form.date} onChange={handleChange} required />
+      <input name="note" value={form.note} onChange={handleChange} placeholder="Note (optional)" />
+      <button type="submit">+ Add Entry</button>
+    </form>
+  );
+};
+
+export default IncomeExpenseForm;*/
+
+
+>>>>>>> c5b456abf1c986adaaea592eb12b6c64ebc2be15
 import React, { useState } from 'react';
 import axios from 'axios';
 import { getToken } from '../utils/api';
@@ -30,7 +73,7 @@ const IncomeExpenseForm = ({ onAdd }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const token = getToken();
-    const res = await axios.post('http://localhost:5000/api/transactions', form, {
+    const res = await axios.post('https://financetracker-sand.vercel.app/api/transactions', form, {
       headers: { Authorization: `Bearer ${token}` }
     });
     onAdd(res.data);
